@@ -34,7 +34,7 @@ header {
 .promotion a {
     color: #ff9700;
     font-family: 'SN Pro';
-    font-size: .7rem;  
+    font-size: 13px;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
 
 .promotion {
     background-color: #ff4464;
-    height: 4vh;
+    height: 4vw;
     align-content: center;
 }
 
@@ -124,7 +124,7 @@ footer {
 }
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 90px;
 }
         
 button {

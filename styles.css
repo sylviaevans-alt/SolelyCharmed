@@ -36,7 +36,7 @@ header {
 .promotion a {
     color: #ff9700;
     font-family: 'SN Pro';
-    font-size: .7rem;  
+    font-size: 14px;  
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 
 .promotion {
     background-color: #ff4464;
-    height: 4vh;
+    height: 4vw;
     align-content: center;
 }
 
@@ -69,7 +69,7 @@ ul li a {
     padding: 4px 16px;
     text-decoration: none;
     color:#450922;
-    font-size: 15px;
+    font-size: 16px;
     margin: -3px;
 }
 
