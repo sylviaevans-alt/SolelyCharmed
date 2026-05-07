@@ -82,7 +82,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 5px 20px #450922;
     width: 60vw;
-    height: 70vh;
+    height: 65vh;
     justify-self: center;
     margin: 25px;
 }
@@ -147,7 +147,6 @@ button:hover {
 footer {
     background-color: #ff9700;
     padding: 10px;
-    position: absolute;
     width: 100vw;
 }
     
