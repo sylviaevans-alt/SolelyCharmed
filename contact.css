@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#ffcbd4, #ff4464);
+    text-align: center;
+    font-family: "SN Pro", "Arial";
+    color: #450922;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+}
+
+.logo-container {
+    width: 60vw;
+    justify-self: center;
+    background: radial-gradient(#ff66aa, #ffb344);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    min-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo-text {
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.promotion a {
+    color: #ff9700;
+    font-family: 'SN Pro';
+    font-size: .7rem;  
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+.promotion {
+    background-color: #ff4464;
+    height: 4vh;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li a {
+    padding: 4px 16px;
+    text-decoration: none;
+    color:#450922;
+    font-size: 15px;
+    margin: -3px;
+}
+
+footer {
+    background-color: #ff9700;
+    padding: 10px;
+    position: absolute;
+    width: 100vw;
+}
+    
+.footer-info {
+    margin: 10px;
+} 
+
+.contact-form {
+    background: #ffcbd4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #450922;
+    width: 60vw;
+    height: 70vh;
+    justify-self: center;
+    margin: 25px;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #450922;
+    text-align: center;
+    font-family: "Concert One"
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #701339;
+}
+.form-group input{
+    width: 84%;
+    border-color: #ff9700;
+    border-radius: 5px;
+    background-color: #fff4f6
+}
+.form-group textarea {
+    width: 80%;
+    padding: 10px 12px;
+    border: 2px solid #ff9700;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #fff4f6;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff0a78;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+        
+button {
+    background: #ff9700;
+    color: #450922;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 86%;
+    transition: background 0.3s;
+    font-family: "Concert One"
+}
+
+button:hover {
+    background: #ff0a78;
+}
+
+footer {
+    background-color: #ff9700;
+    padding: 10px;
+    position: absolute;
+    width: 100vw;
+}
+    
+.footer-info {
+    margin: 10px;
+} 
