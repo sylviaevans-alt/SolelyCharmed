@@ -8,6 +8,13 @@ body {
     min-height: 100vh;
 }
 
+body .loader{
+    justify-self: center;
+    position: relative;
+    top: 200px;
+    z-index: 2;
+}
+
 header {
     width: 100vw;
     height: 20vh;
@@ -46,18 +53,13 @@ span {
 
 h1 {
     font-size: 1.3rem;
+    margin-bottom: 0;
 }
 
 .promotion {
     background-color: #ff4464;
     height: fit-content;
     align-content: center;
-}
-
-.headline {
-    font-family: "Concert One";
-    font-size: 5vw;
-
 }
 
 ul {
@@ -77,68 +79,26 @@ ul li a {
     font-size: 16px;
 }
 
-a{
-    text-decoration: none;
-    color: #ff0a78;
-}
-
-.launch {
-    
-    align-content: center;
-    margin: 7vw;
-    padding: 1vw;
-    margin-top: 60px;
-}
-
-body .launch {
-    justify-self: center;
-}
-
-.image img {
-    height: 180px;
-    width: 180px;
-    border-top-right-radius: 14px;
-    border-top-left-radius: 14px;
-    position: relative;
-    top: -16px;
-    left: -4px;
-    border-style: solid;
-    border-color:#ff0a78;
-    border-width: 4px;
-    border-bottom: none;
-}
-
-.product {
-    margin: 15px;
-    height: 300px;
-    width: 180px;
-    justify-self: center;
-    align-content: center;
-    background-color: #ffe6cb;
-    border-radius: 15px;
-    border: solid 4px #ff0a78;
-}
-
 h3 {
     font-size: 0.95rem;
     margin: 0;
 }
 
-h4 {
-    font-size: 0.75rem;
-    margin: 0;
+.product-page {
+    filter: blur(8px);
 }
+
 .stars {
     color: #ff9700;
     margin: 5px 0 0 0;
-    font-size: 1rem;
+    font-size: 2rem;
     animation-name: stars;
 }
 
 .product-info {
-    top: -5px;
     position: relative;
 }
+
 
 .sold-out {
     background-color: #b19297;
@@ -151,13 +111,31 @@ h4 {
     padding: 2px 5px;
 }
 
-.featured {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
+.price {
+    font-size: large;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 12vw auto;
+    margin: 10vw 10vw 5vw 10vw;
+}
+
+.small-images img{
+    width: 12vw;
+    height: 12vw;
+    display: block;
+    margin: 2vw;
+}
+
+p {
+    margin: 2vw 10vw 10vw;
+}
+
+.large-img img {
+    height: 54vw;
+    margin-top: 2vw;
+}
 footer {
     background-color: #ff9700;
     padding: 10px;
@@ -187,24 +165,7 @@ footer {
     margin-top: 5px;
     font-size: 0.7rem;
 }
-.add-to-cart:hover {
-    color: #ffcbd4;
-}
-.add-to-cart:hover:after {
-    height: 100%;
-}
-.add-to-cart:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    background: #ff0a78;
-}
-        
+
 button {
     background: #ff9700;
     color: #450922;
@@ -213,12 +174,13 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    width: 86%;
+    width: 25%;
     transition: background 0.3s;
-    font-family: "Concert One"
+    font-family: "Concert One";
+    margin: 2vw;
 }
 
-.add-to-cart:hover {
+button:hover {
     background: #ff0a78;
 }
 .logo-text span {
@@ -293,6 +255,7 @@ button {
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s ease-out;
+    
 }
 
 .underline:hover::after,
@@ -307,3 +270,13 @@ li a:hover {
 span:hover{
     color:#ff0a78;
 }
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #ff4464;
+  border-right-color: orange;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}

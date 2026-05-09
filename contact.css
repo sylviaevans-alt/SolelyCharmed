@@ -42,8 +42,8 @@ h1 {
 
 .promotion {
     background-color: #ff4464;
-    height: 4vw;
     align-content: center;
+    height: fit-content;
 }
 
 ul {
@@ -152,3 +152,35 @@ footer {
 .footer-info {
     margin: 10px;
 } 
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after,
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0a78;
+    bottom: 0;
+    left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-out;
+}
+
+.underline:hover::after,
+.underline:hover::before {
+  transform: scaleX(1);
+}
+
+li a:hover {
+    color: #ff0a78;
+}
+
+span:hover{
+    color:#ff0a78;
+}
